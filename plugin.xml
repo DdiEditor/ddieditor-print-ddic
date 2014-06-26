@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="dk.dda.ddieditor.print.ddic.command.PrintDDIC"
+            id="dk.dda.ddieditor.print.ddic.command.PrintDDIC"
+            name="Print DDI-C">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:toolsmenu?after=ddieditor-ui.file.tools.separator1">
+         <command
+               commandId="dk.dda.ddieditor.print.ddic.command.PrintDDIC"
+               label="Print DDI-C"
+               style="push">
+         </command>
+         <separator
+               name="ddieditor-print-ddic.separator1"
+               visible="true">
+         </separator>
+      </menuContribution>
+   </extension>
+</plugin>
