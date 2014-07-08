@@ -3,6 +3,11 @@
    <extension
          point="org.eclipse.ui.commands">
       <command
+            defaultHandler="dk.dda.ddieditor.print.ddic.command.ExportDDIC"
+            id="dk.dda.ddieditor.print.ddic.command.ExportDDIC"
+            name="Export DDI-C">
+      </command>
+      <command
             defaultHandler="dk.dda.ddieditor.print.ddic.command.PrintDDIC"
             id="dk.dda.ddieditor.print.ddic.command.PrintDDIC"
             name="Print DDI-C">
@@ -13,6 +18,11 @@
       <menuContribution
             allPopups="false"
             locationURI="menu:toolsmenu?after=ddieditor-ui.file.tools.separator1">
+         <command
+               commandId="dk.dda.ddieditor.print.ddic.command.ExportDDIC"
+               label="Export DDI-C"
+               style="push">
+         </command>
          <command
                commandId="dk.dda.ddieditor.print.ddic.command.PrintDDIC"
                label="Print DDI-C"

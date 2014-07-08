@@ -154,7 +154,7 @@ public class PrintDDIC extends AbstractHandler {
 								ddiCFile = File.createTempFile(cName, ".xml");
 								ddiCFile.deleteOnExit();
 
-								// create temp ddi-c file
+								// create temp ddi-fo file
 								foFile = File.createTempFile(foName, ".fo");
 								foFile.deleteOnExit();
 
