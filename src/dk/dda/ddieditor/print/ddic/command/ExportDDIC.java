@@ -14,7 +14,6 @@ import org.ddialliance.ddieditor.model.DdiManager;
 import org.ddialliance.ddieditor.model.lightxmlobject.LightXmlObjectType;
 import org.ddialliance.ddieditor.model.resource.DDIResourceType;
 import org.ddialliance.ddieditor.persistenceaccess.PersistenceManager;
-import org.ddialliance.ddieditor.ui.util.PrintUtil;
 import org.ddialliance.ddieditor.util.DdiEditorConfig;
 import org.ddialliance.ddiftp.util.DDIFtpException;
 import org.ddialliance.ddiftp.util.Translator;
@@ -27,6 +26,7 @@ import org.eclipse.jface.window.Window;
 import org.eclipse.ui.PlatformUI;
 
 import dk.dda.ddieditor.print.ddic.dialogs.ExportDDICDialog;
+import dk.dda.ddieditor.print.ddic.util.PrintUtil;
 
 public class ExportDDIC extends org.eclipse.core.commands.AbstractHandler {
 	File ddiLFile = null;

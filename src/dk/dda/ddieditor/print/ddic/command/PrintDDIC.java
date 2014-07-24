@@ -28,7 +28,6 @@ import org.ddialliance.ddieditor.model.lightxmlobject.LightXmlObjectType;
 import org.ddialliance.ddieditor.model.resource.DDIResourceType;
 import org.ddialliance.ddieditor.persistenceaccess.PersistenceManager;
 import org.ddialliance.ddieditor.ui.dialogs.PrintDDICDialog;
-import org.ddialliance.ddieditor.ui.util.PrintUtil;
 import org.ddialliance.ddieditor.util.DdiEditorConfig;
 import org.ddialliance.ddiftp.util.Translator;
 import org.eclipse.core.commands.AbstractHandler;
@@ -39,6 +38,8 @@ import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.window.Window;
 import org.eclipse.ui.PlatformUI;
+
+import dk.dda.ddieditor.print.ddic.util.PrintUtil;
 
 public class PrintDDIC extends AbstractHandler {
 	File ddiLFile = null;
@@ -166,8 +167,7 @@ public class PrintDDIC extends AbstractHandler {
 
 								// transform ddi-l to ddi-c
 								// get transformer
-								Transformer transformer = new PrintUtil()
-										.getDdiLToDdiDdiCTransformer();
+								Transformer transformer = new PrintUtil().getDdiLToDdiDdiCTransformer();
 
 								// do transformation
 								transformer.transform(new StreamSource(ddiLFile
@@ -177,8 +177,7 @@ public class PrintDDIC extends AbstractHandler {
 
 								// transform from ddi-c to fo
 								// get transformer
-								transformer = new PrintUtil()
-										.getDdiCToFoTransformer();
+								transformer = new PrintUtil().getDdiCToFoTransformer();
 
 								// do transformation
 								transformer.transform(new StreamSource(ddiCFile
