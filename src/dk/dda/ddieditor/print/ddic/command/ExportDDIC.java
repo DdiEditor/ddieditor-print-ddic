@@ -91,7 +91,7 @@ public class ExportDDIC extends org.eclipse.core.commands.AbstractHandler {
 								// transform ddi-l to ddi-c
 								// get transformer
 								Transformer transformer = new PrintUtil()
-										.getDdiLToDdiDdiCTransformer();
+										.getDdiLToDdiCTransformer();
 
 								// do transformation
 								transformer.transform(new StreamSource(ddiLFile

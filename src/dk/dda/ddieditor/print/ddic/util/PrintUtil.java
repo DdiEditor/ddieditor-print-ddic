@@ -9,9 +9,9 @@ public class PrintUtil extends org.ddialliance.ddieditor.ui.util.PrintUtil {
 	final String ddiLToDdiDLocation = "resources/ddixslt-lc/ddi3_1_to_ddi1_2_2.xsl";
 	final String ddiCToFoLocation = "resources/ddixslt-cpdf/dditofo_complete.xsl";
 	
-	public Transformer getDdiLToDdiDdiCTransformer() throws Exception {
-		Source ddiLToDdiDLocationXslt = getXsltSource(ddiLToDdiDLocation);
-		Transformer transformer = getTransformer(ddiLToDdiDLocationXslt);
+	public Transformer getDdiLToDdiCTransformer() throws Exception {
+		Source ddiLToDdiCLocationXslt = getXsltSource(ddiLToDdiDLocation);
+		Transformer transformer = getTransformer(ddiLToDdiCLocationXslt);
 		
 		// setup transformer
 		 transformer.setParameter("multilang", "false");

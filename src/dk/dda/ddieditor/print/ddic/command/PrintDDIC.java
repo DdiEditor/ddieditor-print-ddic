@@ -167,7 +167,7 @@ public class PrintDDIC extends AbstractHandler {
 
 								// transform ddi-l to ddi-c
 								// get transformer
-								Transformer transformer = new PrintUtil().getDdiLToDdiDdiCTransformer();
+								Transformer transformer = new PrintUtil().getDdiLToDdiCTransformer();
 
 								// do transformation
 								transformer.transform(new StreamSource(ddiLFile
