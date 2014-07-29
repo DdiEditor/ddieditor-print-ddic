@@ -27,7 +27,6 @@ import org.ddialliance.ddieditor.model.DdiManager;
 import org.ddialliance.ddieditor.model.lightxmlobject.LightXmlObjectType;
 import org.ddialliance.ddieditor.model.resource.DDIResourceType;
 import org.ddialliance.ddieditor.persistenceaccess.PersistenceManager;
-import org.ddialliance.ddieditor.ui.dialogs.PrintDDICDialog;
 import org.ddialliance.ddieditor.util.DdiEditorConfig;
 import org.ddialliance.ddiftp.util.Translator;
 import org.eclipse.core.commands.AbstractHandler;
@@ -39,6 +38,7 @@ import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.window.Window;
 import org.eclipse.ui.PlatformUI;
 
+import dk.dda.ddieditor.print.ddic.dialogs.PrintDDICDialog;
 import dk.dda.ddieditor.print.ddic.util.PrintUtil;
 
 public class PrintDDIC extends AbstractHandler {
